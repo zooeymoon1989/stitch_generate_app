@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be_Vietnam_Pro:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Be Vietnam Pro", sans-serif;
+  --font-label: "Be Vietnam Pro", sans-serif;
+
+  --color-secondary-dim: #005883;
+  --color-error: #ac3149;
+  --color-tertiary: #bd0055;
+  --color-tertiary-container: #ff9cb2;
+  --color-on-tertiary-container: #720030;
+  --color-surface-container-highest: #eedcff;
+  --color-error-container: #f76a80;
+  --color-primary-fixed-dim: #bba6ff;
+  --color-on-surface-variant: #6a5782;
+  --color-primary-container: #c8b7ff;
+  --color-on-secondary-fixed: #004365;
+  --color-tertiary-fixed: #ff9cb2;
+  --color-primary-fixed: #c8b7ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary: #006594;
+  --color-primary-dim: #5c20df;
+  --color-primary: #6834eb;
+  --color-surface-tint: #6834eb;
+  --color-tertiary-dim: #a6004a;
+  --color-on-tertiary-fixed: #48001c;
+  --color-inverse-on-surface: #a598b3;
+  --color-outline-variant: #bfa9d9;
+  --color-on-tertiary: #fff7f7;
+  --color-on-background: #3b2a52;
+  --color-on-primary-container: #4400b5;
+  --color-surface-container-high: #f2e2ff;
+  --color-on-error-container: #68001f;
+  --color-background: #fff7ff;
+  --color-secondary-container: #cae6ff;
+  --color-on-primary-fixed: #2d007f;
+  --color-on-tertiary-fixed-variant: #820038;
+  --color-on-error: #fff7f7;
+  --color-surface-container-low: #faf0ff;
+  --color-surface: #fff7ff;
+  --color-on-secondary-container: #005780;
+  --color-surface-container: #f6e9ff;
+  --color-tertiary-fixed-dim: #ff85a4;
+  --color-on-primary: #fdf7ff;
+  --color-inverse-surface: #130a1e;
+  --color-surface-variant: #eedcff;
+  --color-on-secondary: #f6f9ff;
+  --color-surface-dim: #e7d1ff;
+  --color-on-surface: #3b2a52;
+  --color-outline: #86729f;
+  --color-inverse-primary: #9a7bff;
+  --color-secondary-fixed-dim: #addaff;
+  --color-on-primary-fixed-variant: #4e00cd;
+  --color-secondary-fixed: #cae6ff;
+  --color-surface-bright: #fff7ff;
+  --color-error-dim: #770326;
+  --color-on-secondary-fixed-variant: #00618f;
+
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body antialiased;
+  }
+}
+
+.glass-header {
+  background: rgba(255, 247, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, #6834eb 0%, #5c20df 100%);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
